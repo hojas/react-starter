@@ -1,6 +1,6 @@
 # react-starter
 
-A React starter template with MDX, Tailwind CSS, and Vite.
+A React starter template with Vite.
 
 ## Techs
 
