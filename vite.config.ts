@@ -4,10 +4,17 @@ import react from '@vitejs/plugin-react-swc'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [mdx(), react()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
+    },
+  },
+  plugins: [mdx(), react()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern',
+      },
     },
   },
 })
